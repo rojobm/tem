@@ -1,0 +1,4 @@
+Angular. Framework. Remplaza a Ayax.
+Polymer. Ocupa web componets nativos.
+React. Aplicaciones híbridas. Todo con javascript.
+

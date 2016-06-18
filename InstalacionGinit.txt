@@ -1,0 +1,7 @@
+$ git config --global user.name "GusDeveloper"
+$ git config --global user.email "rojobm@yahoo.com"
+git init //para iniciar carpeta
+
+git status
+git add archivotexto.txt
+git commit -m "un achivo de prueba cargado con commit"
