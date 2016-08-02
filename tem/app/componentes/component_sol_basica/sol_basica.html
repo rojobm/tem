@@ -1,0 +1,117 @@
+<div class="container">
+<!--<div class="card-panel" ng-if="$ctrl.usuario">
+Para continar llenando un formulario da doble click:
+<a ng-click="$ctrl.muestra()" class="btn-floating btn-small waves-effect waves-light grey"><i class="material-icons">add</i></a>
+</div>-->
+</div>
+
+<div class="section no-pad-bot" id="index-banner"> <!--ng-if="$ctrl.usuario"-->
+<!--Bienvenido {{$ctrl.usuario.displayName}}! Por favor completa los siguientes datos.-->
+  <div class="container">
+  <form align="center">
+    <!-- Referencia -->
+    <div class="card-panel">
+      <span class="grey lighten-1">
+            <div class="row" align="left">
+                <div class="card-content grey-text text-ligthen-1 col s8 m8 l6">
+                  ¿Fuiste referido por alguno de nuestros clientes?
+                </div>
+                <div class="col s4 m4 l4">
+                    <input class="with-gap" name="gpo_referido" type="radio" id="si" ng-model="$ctrl.reg.referido" value="si"/>
+                    <label for="si">Sí</label>
+                    <input class="with-gap" name="gpo_referido" type="radio" id="no" ng-model="$ctrl.reg.referido" value=""/>
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div class="row" align="left" ng-if="$ctrl.reg.referido">
+                <div class="input-field col s8 m8 l6">
+                  <input placeholder="Ingresa la clave de referencia" type="text" class="validate" ng-model="$ctrl.reg.cve_referencia"><!--<label for="referencia">Ingresa la clave de referencia</label>-->
+                </div>
+            </div>
+      </span>
+    </div>
+
+    <!-- Nombre y contacto -->
+    <div class="card-panel">
+      <span class="blue-text text-darken-2">
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input placeholder="Nombre" type="text" class="validate" ng-model="$ctrl.reg.nombre_escrito"><!--<label for="first_name">Nombres</label>-->
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Apellido" type="text" class="validate" ng-model="$ctrl.reg.apellido_escrito"><!--<label for="last_name">Apellidos</label>-->
+              </div>
+            </div>
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input placeholder="Correo electrónico" type="email" class="validate" ng-model="$ctrl.reg.correo_escrito"> <!--<label for="email">Correo electrónico</label>-->
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Celular a 10 dígitos" type="text" class="validate" ng-model="$ctrl.reg.cel_escrito"> <!--<label for="Celular">Celular a 10 dígitos</label>-->
+              </div>
+            </div>
+
+      </span>
+    </div>
+  <!-- Domicilio -->
+    <div class="card-panel">
+      <span class="blue-text text-darken-2" align="left"> 
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input placeholder="Calle" type="text" class="validate" ng-model="$ctrl.reg.calle">
+              </div>
+              <div class="input-field col s2">
+                <input placeholder="Num exterior" type="text" class="validate" ng-model="$ctrl.reg.numext">
+              </div>
+              <div class="input-field col s2">
+                <input placeholder="Num interior" type="text" class="validate" ng-model="$ctrl.reg.numint">
+              </div>              
+            </div>
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input placeholder="Código Postal" type="text" class="validate" ng-model="$ctrl.reg.cp">
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Colonia" type="text" class="validate" ng-model="$ctrl.reg.col">
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Delegación" type="text" class="validate"  ng-model="$ctrl.reg.del">
+              </div>
+            </div>
+      </span>
+    </div>
+<!-- Ocupación -->
+    <div class="card-panel">
+      <span class="grey lighten-5">
+            <div class="row" align="left">
+                <div class="col s6 card-content grey-text text-ligthen-1">
+                    ¿A qué te dedicas?        
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="nini" ng-model="$ctrl.reg.ocupacion" value="nini" />
+                    <label for="nini">Ni estudio ni trabajo</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="hogar" ng-model="$ctrl.reg.ocupacion" value="hogar" />
+                    <label for="hogar">A mi hogar</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="negocio" ng-model="$ctrl.reg.ocupacion" value="negocio"  />
+                    <label for="negocio">Mi propio negocio/comerciante</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="empleado" ng-model="$ctrl.reg.ocupacion" value="empleado" />
+                    <label for="empleado">Empleado</label>
+                  </p>      
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="estudiante" ng-model="$ctrl.reg.ocupacion" value="estudiante" />
+                    <label for="estudiante">Estudiante</label>
+                  </p>      
+                </div>
+            </div>
+      </span>
+    </div>
+    <a ng-click="$ctrl.guarda()" class="waves-effect waves-light btn">Guarda</a>
+    <a ng-click="$ctrl.guardaycontinua()" class="waves-effect waves-light btn">Guarda y continua</a>    
+  </form>
+  </div>
+</div>

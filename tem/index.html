@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bueno">
+<head>
+  <script src="https://sdk.accountkit.com/en_US/sdk.js"></script> <!--FaceBook-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Perfekti</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_lwqNk5ZVvwq0VgMlyZq02");
+     })();
+  </script>  
+</head>
+<body>
+
+  <el-navegador></el-navegador>
+  <ng-view></ng-view>
+  <el-pie></el-pie>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.0.0/angularfire.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBy8o0MPxYRLRGbIinMuQUG1px_RQMlav4",
+    authDomain: "temm-e857b.firebaseapp.com",
+    databaseURL: "https://temm-e857b.firebaseio.com",
+    storageBucket: "temm-e857b.appspot.com",
+  };
+  firebase.initializeApp(config);
+  var provider = new firebase.auth.FacebookAuthProvider();
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>  
+
+  <script src="app/app.js"></script>
+  <script src="app/factory/factory.js"></script>
+  <script src="app/componentes/rutas.js"></script>
+  <script src="app/componentes/component_footer/footer.js"></script>
+  <script src="app/componentes/component_navegador/navegador.js"></script>
+  <script src="app/componentes/component_header/header.js"></script>
+  <script src="app/componentes/component_iconos/iconos.js"></script>  
+  <script src="app/componentes/component_solicitud/solicitud.js"></script>    
+  <script src="app/componentes/component_sol_basica/sol_basica.js"></script>    
+  <script src="app/componentes/component_ev_cred/ev_cred.js"></script>    
+
+</body>
+</html>

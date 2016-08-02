@@ -1,0 +1,65 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+  <form align="center">
+  <!-- Domicilio -->
+    <div class="card-panel">
+      <span class="blue-text text-darken-2" align="left"> 
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input placeholder="Calle" type="text" class="validate" ng-model="$ctrl.reg.calle">
+              </div>
+              <div class="input-field col s2">
+                <input placeholder="Num exterior" type="text" class="validate" ng-model="$ctrl.reg.numext">
+              </div>
+              <div class="input-field col s2">
+                <input placeholder="Num interior" type="text" class="validate" ng-model="$ctrl.reg.numint">
+              </div>              
+            </div>
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input placeholder="Código Postal" type="text" class="validate" ng-model="$ctrl.reg.cp">
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Colonia" type="text" class="validate" ng-model="$ctrl.reg.col">
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Delegación" type="text" class="validate"  ng-model="$ctrl.reg.del">
+              </div>
+            </div>
+      </span>
+    </div>
+<!-- Ocupación -->
+    <div class="card-panel">
+      <span class="grey lighten-5">
+            <div class="row" align="left">
+                <div class="col s6 card-content grey-text text-ligthen-1">
+                    ¿A qué te dedicas?        
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="nini" ng-model="$ctrl.reg.ocupacion" value="nini" />
+                    <label for="nini">Ni estudio ni trabajo</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="hogar" ng-model="$ctrl.reg.ocupacion" value="hogar" />
+                    <label for="hogar">A mi hogar</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="negocio" ng-model="$ctrl.reg.ocupacion" value="negocio"  />
+                    <label for="negocio">Mi propio negocio/comerciante</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="empleado" ng-model="$ctrl.reg.ocupacion" value="empleado" />
+                    <label for="empleado">Empleado</label>
+                  </p>      
+                  <p>
+                    <input class="with-gap" name="gpo_ocu" type="radio" id="estudiante" ng-model="$ctrl.reg.ocupacion" value="estudiante" />
+                    <label for="estudiante">Estudiante</label>
+                  </p>      
+                </div>
+            </div>
+      </span>
+    </div>
+    <a ng-click="$ctrl.guarda()" class="waves-effect waves-light btn">Guarda</a>
+    <a ng-click="$ctrl.guardaycontinua()" class="waves-effect waves-light btn">Guarda y continua</a>    
+  </form>
+  </div>
+</div>

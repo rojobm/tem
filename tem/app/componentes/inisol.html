@@ -1,0 +1,19 @@
+   <div class="row">
+    <h1>{{$ctrl.titulo}}</h1>
+    <form class="col s12" ng-submit="$ctrl.funcinisol()">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="correo" type="email" class="validate" ng-model="$ctrl.correo">
+          <label for="correo">Correo electrónico</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="contrasena" type="password" class="validate" ng-model="$ctrl.contrasena">
+          <label for="contrasena">Contraseña</label>
+        </div>
+      </div>
+      <button>Enviar</button>
+    </form>
+  </div>
+  

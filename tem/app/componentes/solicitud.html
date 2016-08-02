@@ -1,0 +1,102 @@
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+      <br><br>
+
+  <!-- Nombre y contacto -->
+  <form ng-submit="$ctrl.addMessage()" align="center">
+    <div class="card-panel">
+      <span class="blue-text text-darken-2">
+                    <div class="row" align="left">
+              <div class="input-field col s6">
+                <input placeholder="" id="first_name" type="text" class="validate" ng-model="$ctrl.nombre">
+                <label for="first_name">Nombres</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Apellidos</label>
+              </div>
+            </div>
+
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input id="email" type="email" class="validate">
+                <label for="email">Correo electrónico</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="email" type="text" class="validate">
+                <label for="Celular">Celular a 10 dígitos</label>
+              </div>
+            </div>
+
+      </span>
+    </div>
+  <!-- Domicilio -->
+    <div class="card-panel">
+      <span class="blue-text text-darken-2" align="left"> 
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input id="calle" type="text" class="validate">
+                <label for="calle">Calle</label>
+              </div>
+              <div class="input-field col s2">
+                <input id="num_ext" type="text" class="validate">
+                <label for="num_ext">Num exterior</label>
+              </div>
+              <div class="input-field col s2">
+                <input id="num_ext" type="text" class="validate">
+                <label for="num_ext">Num interior</label>
+              </div>              
+            </div>
+
+            <div class="row" align="left">
+              <div class="input-field col s6">
+                <input id="cp" type="text" class="validate">
+                <label for="cp">Código Postal</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="colonia" type="text" class="validate">
+                <label for="colonia">Colonia</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="delegacion" type="text" class="validate">
+                <label for="delegacion">Delegacion / Municipio</label>
+              </div>
+            </div>
+      </span>
+    </div>
+<!-- Ocupación -->
+    <div class="card-panel">
+      <span class="grey lighten-5">
+            <div class="row" align="left">
+                <div class="col s6">
+                A qué te dedicas? 
+                  <p>
+                    <input class="with-gap" name="group1" type="radio" id="nini" />
+                    <label for="nini">Ni estudio ni trabajo</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="group1" type="radio" id="hogar" />
+                    <label for="hogar">A mi hogar</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="group1" type="radio" id="negocio"  />
+                    <label for="negocio">Mi propio negocio/comerciante</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="group1" type="radio" id="empleado" />
+                    <label for="empleado">Empleado</label>
+                  </p>      
+                  <p>
+                    <input class="with-gap" name="group1" type="radio" id="estudiante" />
+                    <label for="estudiante">Estudiante</label>
+                  </p>      
+                </div>
+            </div>
+      </span>
+    </div>
+    <button>Enviar</button>
+    <a href="#/solicitud2" class="waves-effect waves-light btn">Continuar</a>
+  </form>
+
+  </div>
+</div>

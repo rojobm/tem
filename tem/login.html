@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acceso con Facebook</title>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+</head>
+<body>
+  <button id="loginfacebook">Conectar con Facebook</button>
+  <script>
+
+    var config = {
+      apiKey: "AIzaSyBThW8vgP3Qk8qcR9wX9sDNJgbV_iQ7KEA",
+      authDomain: "proyectochat-d61f6.firebaseapp.com",
+      databaseURL: "https://proyectochat-d61f6.firebaseio.com",
+      storageBucket: "proyectochat-d61f6.appspot.com",
+    };
+    firebase.initializeApp(config);
+
+    document.getElementById("loginfacebook").addEventListener('click', function(){
+
+      var provider = new firebase.auth.FacebookAuthProvider();
+
+      firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        console.log("Usuario en consola: ", user.email);
+        // ...
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+      });      
+    });
+  </script>
+</body>
+</html>  

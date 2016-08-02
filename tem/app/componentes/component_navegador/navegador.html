@@ -1,0 +1,14 @@
+  
+  <nav class="blue-grey lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#/inicio" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#/inicio">Beneficios</a></li>
+        <li><a href="#/solicitud">Obten tu tarjeta</a></li>
+        <li><a href="#/beneficios">Como funciona</a></li>           
+        <li><a ng-if="$ctrl.muestra_login" ng-click="$ctrl.funcinisol()">Log in</a></li> 
+        <li><a ng-if="$ctrl.usuario" ng-click="$ctrl.terminasesion()"> Log out</a></li>
+        <li><a ng-if="$ctrl.usuario"><img src="{{$ctrl.usuario.photoURL}}" class="circle responsive-img"></a></li> <!--width="70%" height="70%"-->
+     </ul>
+    </div>
+  </nav>
