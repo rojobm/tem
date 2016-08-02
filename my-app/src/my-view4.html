@@ -1,0 +1,35 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../polymer/paper-card.html">
+
+<!--
+`my-view4.html`
+Primer elemento de polymer por mi
+
+@demo demo/index.html 
+-->
+
+<dom-module id="my-view4.html">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'my-view4.html',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'my-view4.html',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

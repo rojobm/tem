@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en" ng-app="pracRoutes">
+<head>
+	<meta charset="UFT-8">
+	<title>Routes</title>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection"/>
+	<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+{{1+1}}
+
+<!--<var-mia></var-mia>-->
+    
+    <div class="row">
+      <div class="col s12">This div is 12-columns wide</div>
+      <div class="col s6">This div is 6-columns wide</div>
+      <div class="col s6">This div is 6-columns wide</div>
+    </div>
+
+<div ng-view></div><!--directiva de angular. Se indica que en este contenedor se debe mostrar todo-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>        
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+	<script src="app.js"></script>
+	<script src="app/routes/routes.js"></script>	
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div>
+	<form ng-submit="$ctrl.addMessage()"> <!--al apretar el boton solicita la función addMessage-->
+		<input type="text" ng-model="$ctrl.user" placeholder="user">
+		<input type="text" ng-model="$ctrl.message" placeholder="your message">
+		<button>Enviar</button>
+	</form>
+	<div ng-repeat="message in $ctrl.messages">
+		<span>{{message.user}}:</span> {{message.message}}
+	</div>
+</div>

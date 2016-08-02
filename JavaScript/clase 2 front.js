@@ -98,10 +98,15 @@ function conv_hexa(r,g,b){
 conv_hexa(240,10,90);
 
 IDENTIFICA PAR O NON
-function parnon(x){
-	if (x==0) return ("par");
-	
-	if (x==1) return ("non"); 
-	else return(parnon(x-2);
+	function parnon(x){
+	if (x==0) {
+		return ("par");
+	}
+	else if (x==1) {
+		return ("non");
+	} 
+    else {
+    	return(parnon(x-2);
+    }
 }
 console.log(parnon(2));

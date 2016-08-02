@@ -1,0 +1,10 @@
+Permite registrarse solo con el celular. No se necesita cuenta de facebook.
+Usa el account kit sdk.
+github/AlexMaguey/AccountKit
+
+usa un style="display:none;"
+
+en el html se inicia el accountkit con un script
+AccountKit_OnInteractive = funciton().....
+
+el loginCallback se manda llamar en la función de onClick

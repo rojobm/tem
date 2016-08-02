@@ -1,0 +1,35 @@
+CONFIGURACIÓN GLOBAL UNA VEZ
+git config --global user.name "Gustavo"
+git config --global user.email "roo@gm.com"
+------------------------------------------------------
+SE SEÑALA UNA CARPETA COMO PROYECTO LOCAL
+git init
+
+SE GENERA REPOSITORIO EN GITHUB.COM si agregar el readme.
+Se obetienen los url
+
+SE CONECTA A INTERNET
+git remote add origin url (la que da github)
+
+----------------------------------------------------
+PARA CADA NUEVO CAMBIO
+git add nombre_archivo; PARA AÑADIR UN ARCHIVO
+O
+git add .; PARA AÑADIR TODO EL DIRECTORIO
+
+ENVÍA TODO LO QUE SE SEÑALO EN EL ADD
+git commit -m "mensaje"
+
+EN EL PRIMER PUSH SE DEBE PONER ORIGIN MASTER
+git push -u origin master
+
+EN OTROS PUSH NO ES NECESARIO EL ORIGIN MASTER
+git push
+
+Creación de ramas
+$ git branch primera_rama
+$ git checkout primera_rama
+
+PARA ENVIAR A TRAVÉS DE UNA RAMA
+git merge [branch]
+git merge [rama]

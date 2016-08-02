@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="chat">  
+
+<head>
+	<meta charset="UFT-8">
+</head>
+
+<body> <!--se indica que en body se le llamará first a pracCtrl-->
+hola
+{{1+1}}
+<chat></chat>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<!--Librerías para usar Firebase 3-->
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.0/angularfire.min.js"></script>
+
+<script>
+  // Initialize Firebase 3
+  var config = {
+    apiKey: "AIzaSyBThW8vgP3Qk8qcR9wX9sDNJgbV_iQ7KEA",
+    authDomain: "proyectochat-d61f6.firebaseapp.com",
+    databaseURL: "https://proyectochat-d61f6.firebaseio.com",
+    storageBucket: "",
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- Firebase -->
+<!--   <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script> -->
+<!-- AngularFire -->
+<!--   <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script> -->
+
+   <script src="app/app.js"></script>
+   <script src="app/factory/factory.js"></script>
+   <script src="app/component/chat_component/chat_component.js"></script>
+</body>
+
+</html>

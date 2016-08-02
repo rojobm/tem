@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="ngapp_palin">  
+
+<head>
+	<meta charset="UFT-8">
+</head>
+
+<body ng-controller="pracCtrl as first"> <!--se indica que en body se le llamará first a pracCtrl-->
+
+	<form name="myForm">
+	email<input type="text" ng-model="first.email" required type="email">
+	<button ng-click="first.abc(first.email)">¿Summit email?</button>
+
+	email obligatorio<input name="myInput" ng-model="myInput" required>    
+	<p>The input's valid state is:</p>
+	<h1>{{myForm.myInput.$valid}}</h1>
+
+	</form>
+    <br>
+    
+    <!--Mouse over OK
+	<button ng-mouseover="count = count + 1" ng-init="count=0">
+  		Increment (when mouse is over)
+	</button>
+	count: {{count}}
+	<<-->
+
+	<h4>{{first.number}}+2 = {{first.number+2}}</h4>
+
+	<ul>
+		<li ng-repeat="usuario in first.users">
+			{{usuario.name}} tiene {{usuario.age}} años
+		</li>>
+	</ul>
+
+	<button ng-click="first.click()">Clickeame morro</button>
+
+    <input type="text" ng-model="search.name">
+	<table style="border:1px solid blue;" border="1">
+		<tr ng-repeat="usuario in first.users | filter:search | orderBy:'age'" ng-if="usuario.age<50">
+			<td>{{$index+1}}</td>
+			<td>{{usuario.name}}</td>
+			<td>{{usuario.age}}</td>
+			<td>{{usuario.pais}}</td>
+			<td><button ng-click="first.ruco(usuario)">click me
+		</tr>
+	</table>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

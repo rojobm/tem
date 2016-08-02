@@ -1,0 +1,32 @@
+INICIACIÓN DE POLYMER
+
+se instala polymer. (Esto se hace solo una vez en la computadora)
+npm install g polymer-cli
+
+
+se tiene que instalar bower
+$ npm install -g bower
+
+
+se hace un proyecto de polymer
+mkdir my-app
+cd my-app
+polymer init
+
+¿cómo se sabe que sí se generó bien el proyecto)
+El proyecto se abre:
+polymer serve --open
+
+
+Para cear una nueva view:
+polymer init
+se le pone src / para que lo coloque en la ubicación
+elejir la opción 1
+Responer NO "n" a: 
+Overwrite bower.jason
+Overwrite index
+Overwrite readme
+
+
+Para instalar componentes:
+ver el Bower Command en cada página
